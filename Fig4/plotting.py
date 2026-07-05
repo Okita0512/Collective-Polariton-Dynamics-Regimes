@@ -55,6 +55,7 @@ set_helvetica()
 script_dir = Path(__file__).resolve().parent
 se_root = script_dir / "SE_4states"
 mf_2vib_root = script_dir / "MF_2vib"
+out_dir = script_dir.parent / "Figures"
 t_vib = 1000.0
 
 n_few = [1, 2, 4, 8]
@@ -236,6 +237,7 @@ pos_b = ax_b.get_position()
 ax_b.set_position([pos_b.x0, pos_b.y0 + 0.046, pos_b.width, pos_b.height])
 pos_c = ax_c.get_position()
 ax_c.set_position([pos_c.x0, pos_c.y0 + 0.026, pos_c.width, pos_c.height])
-fig.savefig("Fig4.pdf", bbox_inches="tight")
-fig.savefig("Fig4.png", bbox_inches="tight", dpi=150)
-print("Saved Fig4.pdf / Fig4.png")
+out_dir.mkdir(exist_ok=True)
+fig.savefig(out_dir / "Fig4.pdf", bbox_inches="tight")
+fig.savefig(out_dir / "Fig4.png", bbox_inches="tight", dpi=150)
+print("Saved Figures/Fig4.pdf / Figures/Fig4.png")

@@ -50,6 +50,7 @@ set_helvetica()
 
 script_dir = Path(__file__).resolve().parent
 mf_conv_root = script_dir / "MF_convergence"
+out_dir = script_dir.parent / "Figures"
 
 rabi_period_fs = 2.0 * np.pi / (0.2 / 0.658211951)
 t_max = 100.0
@@ -115,6 +116,7 @@ for spine in ax.spines.values():
     spine.set_linewidth(2.5)
 
 fig.tight_layout(rect=(0, 0, 1, 0.95))
-fig.savefig("Fig2.pdf", bbox_inches="tight")
-fig.savefig("Fig2.png", bbox_inches="tight", dpi=150)
-print("Saved Fig2.pdf / Fig2.png")
+out_dir.mkdir(exist_ok=True)
+fig.savefig(out_dir / "Fig2.pdf", bbox_inches="tight")
+fig.savefig(out_dir / "Fig2.png", bbox_inches="tight", dpi=150)
+print("Saved Figures/Fig2.pdf / Figures/Fig2.png")

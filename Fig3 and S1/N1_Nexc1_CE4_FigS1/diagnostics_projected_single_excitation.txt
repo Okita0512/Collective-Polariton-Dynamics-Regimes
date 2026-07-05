@@ -1,0 +1,7 @@
+solve_ivp_success: True
+nan_inf_present: False
+max_abs_error_vs_exact: 7.716451e-10
+max_abs_Nexc_error: 1.110223e-16
+max_abs_D_minus_C_conj: 0.000000e+00
+min_n: 1.472147e-07
+max_n: 1.000000e+00
