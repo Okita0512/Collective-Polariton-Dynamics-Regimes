@@ -13,3 +13,5 @@ Folders:
 - `Fig4`: SE/MF bright-vibrational-mode convergence workflow.
 
 Generated manuscript figures are written to `Figures/`.
+
+Updated on 07/19/2026: glad to announce that the paper has been published on J. Phys. Chem. Lett., see https://pubs.acs.org/doi/full/10.1021/acs.jpclett.6c01689
